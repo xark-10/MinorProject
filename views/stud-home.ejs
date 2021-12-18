@@ -1,0 +1,38 @@
+<%- include ("partials/head") %>
+  
+  <!-- navbar 
+    <nav>
+      <div class="logo">
+        <h3><a href="home.html" class="logo-name">E-Results</a></h3>
+      </div>
+    </nav>-->
+    <div class="logo">
+      <h3><a href="#" class="logo-name">E-Results</a></h3>
+    </div>
+    <table id="grid" style="padding-top: 55px"align="center">  
+        <tr>
+          <td>ID: </td>
+          <td><%= username %></td>  
+        </tr>
+        <tr>
+          <td>Name : </td> 
+          <td><%= userId %></td>  
+        </tr>
+        <tr>
+          <td>Register No : </td>
+          <td> <%= registerNo %></td> 
+        </tr> 
+        <tr>
+          <td>Year of Study : </td> 
+          <td> <%= yearofStudy %></td>  
+        </tr>  
+        </table>  
+      <form method="post" action="\studentResultRoute" >
+        <label for="exampleFormControlInput1">Identity no.</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1 " name="username" placeholder="VTU/VPA/VRU">
+        <div class="form-group" style="padding-top:65px">  
+          <button type="submit" class="btn btn-primary btn-block">
+            Get Results 
+          </button>
+  
+  

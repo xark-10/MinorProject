@@ -1,0 +1,50 @@
+<%- include ("partials/header") %>
+<style>
+  .newstud{
+    padding-top:150px;
+  }
+</style>
+   <section class="newstud">
+    <form action='/newStudent' method='post'>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Student Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1 " name="name" placeholder="Light Yagami">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Resister no.</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1 " name="registerNo" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Identity no.</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1 " name="username" placeholder="VTU/VPA/VRU">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Password</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1 " name="password" placeholder="Password">
+          </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1 " name="email" placeholder="vtu11111@veltech.edu.in">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Year of study</label>
+            <select class="form-control" id="exampleFormControlSelect1 " name="yearofStudy">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+        </div>
+        <div class="form-group m-0">
+            <button type="submit" class="btn btn-primary btn-block">
+                Create New Record
+            </button>
+        </div>
+      </form>
+    </section>
+      <%- include ("partials/footer") %>
