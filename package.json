@@ -11,7 +11,7 @@
   "author": "mukundan",
   "license": "ISC",
   "engines": {
-    "node": "10.19.0"
+    "node": "16.13.1"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
