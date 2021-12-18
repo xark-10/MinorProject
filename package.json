@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "sem 5 minor project",
   "main": "app.js",
-
+  "scripts": {
+    "start": "node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon server",
+    "test": "cross-env NODE_ENV=test mocha --recursive --exit --timeout 10000"
+  },
   "author": "mukundan",
   "license": "ISC",
   "engines": {
