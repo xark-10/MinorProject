@@ -102,10 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
-<<<<<<< Updated upstream
-=======
 
-/node_modules
-/*.env
-npm-debug.log
->>>>>>> Stashed changes
