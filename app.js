@@ -46,11 +46,14 @@ passport.deserializeUser(function (id, done) {
         done(err, user);
     });
 });
+let port = process.env.PORT ;
+if(port ==null || port ===""){
+    port =3000;
+}
 
 
-
-app.listen(process.env.PORT || 3000, function (req, res) {
+app.listen(port, function (req, res) {
     console.log(
-        `Server started at port ${process.env.PORT} and running in ${process.env.NODE_ENV} environment.`
+        `Server started at port ${port} and running in ${process.env.NODE_ENV} environment.`
     )
 })
