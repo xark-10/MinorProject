@@ -1,0 +1,74 @@
+<%- include ("partials/header") %>
+  
+  <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <h3><a href="admin-home.ejs" class="logo-name">E-Results</a></h3>
+      </div>
+
+     
+    </nav>
+    <div align="center">
+      <div class="divcontainer">
+       <div id="divtable" style="width: 972px">
+    <div class="labelheading">  <span id="ContentPlaceHolder1_lblHeader" class="labelhead">ADMIN DETAILS</span>
+       </div> 
+    <div id="divlogin-table">
+   
+   
+   
+     <table border="0" style="width: 481px; height: 212px">           
+         <tbody>
+               <tr>
+                   <td style="height: 21px;" valign="top" align="left">
+                       <span id="ContentPlaceHolder1_lblvtunumber" style="display:inline-block;font-weight:bold;width:100px;">TTS No:</span></td>
+                   <td style="width: 152px; height: 21px;" valign="top" align="left">
+                       &nbsp;<span id="ContentPlaceHolder1_lblVTUid" style="display:inline-block;width:140px;">TTS11506</span></td>
+               </tr>
+               <tr>
+                <td style="height: 21px;" valign="top" align="left">
+                    <span id="ContentPlaceHolder1_lblvtunumber" style="display:inline-block;font-weight:bold;width:100px;">Name:</span></td>
+                <td style="width: 152px; height: 21px;" valign="top" align="left">
+                    &nbsp;<span id="ContentPlaceHolder1_lblVTUid" style="display:inline-block;width:140px;">Mukundhan B</span></td>
+            </tr>
+         <tr>
+             <td align="left" style="height: 17px">
+                       <span id="ContentPlaceHolder1_Label3" style="font-weight:bold;">Gender:</span></td>
+             <td align="left" style="width: 152px; height: 17px">
+             <span id="ContentPlaceHolder1_lblGender" style="display:inline-block;width:140px;">Male</span></td>
+         </tr>
+
+             <tr>
+                 <td align="left" style="height: 23px" valign="top">
+                       <span id="ContentPlaceHolder1_Label4" style="display:inline-block;font-weight:bold;width:103px;">Joining:</span></td>
+                 <td align="left" style="width: 152px; height: 23px" valign="top">
+                     <span id="ContentPlaceHolder1_lblDOJ" style="display:inline-block;width:140px;">05-08-2019</span></td>
+             </tr>
+
+         
+           
+               
+         <tr>
+             <td align="left" style="height: 23px" valign="top">
+             </td>
+             <td align="left" style="width: 152px; height: 23px" valign="top">
+             </td>
+         </tr>
+
+         <form method="get" action="\newStudent">
+          <div class="form-group" style="padding-top: 85px;">  
+            <button type="submit" class="btn btn-primary btn-block">
+              Create New Record
+             </button>
+      </div>
+    </form>
+  <form method="get" action="\admin-update" >
+      <div class="form-group" >  
+        <button type="submit" class="btn btn-primary btn-block">
+          Update Marks
+        </button>
+  </div>
+    </form>   
+          
+        
+           </tbody></table>
