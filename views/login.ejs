@@ -1,11 +1,26 @@
 <%- include ("partials/head") %>
+
+<style>
+    .logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    }
+</style>
+
+
 <form action="/loginStudent" method="post">
 <section class="h-100 my-login-page">
     <div class="container h-100">
         <div class="row justify-content-md-center h-100">
             <div class="card-wrapper">
                 <div class="brand">
-                    <img src="images\logo.png" alt="logo">
+                    <img src="images\logo.png" alt="logo" class="logo">
                 </div>
                 <div class="card fat">
                     <div class="card-body">

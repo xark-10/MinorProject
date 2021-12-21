@@ -12,33 +12,84 @@
     border: 1px solid black;
     border-collapse: collapse;
     
+    
   }
+  th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+  tr:hover {background-color: yellow;}
+  tr:nth-child(even){background-color: #f2f2f2}
+  table1, tr1, td1 {
+    
+    padding: 8px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+  .stu{
+    padding: 8px;
+  text-align: center; 
+  border: none;
+  }
+  .grade{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+   
   </style> 
-
-
-    <table id="grid" align="center">  
+    <p class="stu"> Id : <%= studentId %> </p>
+    <table id="grid" align="center">
       <tr>
+        <th> S.No</th>
+        <th> Course Id</th>
+        <th> Grade </th>  
+      </tr>  
+      <tr>
+        <td> 1</td>
         <td><%= subject1Id %> </td>
         <td><%= subject1mark %></td>  
       </tr>
       <tr>
+        <td> 2</td>
         <td><%= subject2Id %> </td> 
         <td><%= subject2mark %></td>  
       </tr>
       <tr>
+        <td> 3</td>
         <td><%= subject3Id %> </td>
         <td> <%= subject3mark %></td> 
       </tr> 
       <tr>
+        <td> 4</td>
         <td><%= subject4Id %> </td> 
         <td> <%= subject4mark %></td>  
       </tr>
       <tr>
+        <td> 5</td>
         <td><%= subject5Id %> </td> 
         <td> <%= subject5mark %></td>  
       </tr> 
       <tr>
+        <td> 6</td>
         <td><%= subject6Id %> </td> 
         <td> <%= subject6mark %></td>  
       </tr>   
-      </table>  
+      </table> <br>
+      <br>
+      <br>
+      <p class="grade">
+      <b>Grade System for the students based on the following criteria,</b><br>
+      <p class="grade">
+      S->90-100,<br> 
+      A->80-89,<br> 
+      B->70-79,<br> 
+      C->60-69,<br> 
+      D->50-59,<br> 
+      U->0-49<br>
+      </p>  
